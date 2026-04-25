@@ -157,4 +157,4 @@ I can now explain, concretely and with numbers from kernels I wrote: why transfo
 
 ---
 
-*Eric, UIUC ECE Master's, 2026. GPU: Colab Tesla T4. Edge: Raspberry Pi 4B 4GB. Dataset: ETTh1 (Electricity Transformer Temperature).*
+*Eric Thomas, April 2026. GPU: Colab Tesla T4. Edge: Raspberry Pi 4B 4GB. Dataset: ETTh1 (Electricity Transformer Temperature).*
