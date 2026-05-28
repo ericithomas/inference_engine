@@ -150,11 +150,3 @@ The project demonstrates the FlashAttention algorithmic idea cleanly, but it is 
 The anomaly detection task itself shows limited signal. In the 80/20 train-test split, only about 13 windows in the test set fell on injected anomalies (out of 3053), so the F1 score on the anomaly class is low. This is a data construction issue (anomalies were injected uniformly across the full series rather than ensured to land in the test split) rather than a model issue, and the project's contribution is the inference engine itself rather than detection accuracy.
 
 ---
-
-## What I Took Away From This
-
-I can now explain, concretely and with numbers from kernels I wrote: why transformer attention is memory-bandwidth bound rather than compute bound, what HBM and SRAM are and why the gap between them drives kernel design, how online softmax allows the N×N attention matrix to be eliminated entirely, how kernel fusion reduces redundant HBM traffic, and how to run a transformer on an edge device with no framework. The full GPU-training-to-edge-deployment loop is something I have built end-to-end rather than just read about.
-
----
-
-*Eric Thomas, April 2026. GPU: Colab Tesla T4. Edge: Raspberry Pi 4B 4GB. Dataset: ETTh1 (Electricity Transformer Temperature).*
